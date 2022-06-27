@@ -7,15 +7,15 @@ public class LiniaDemo {
         Linia linia3 = new Linia(17, "Y");
         Linia linia4 = new Linia(18, "^", "#");
 
-//        linia1.dlugosc = 20;
-//        linia1.wypelnienie = "++";
-//
-//        linia2.dlugosc = 30;
-//        linia2.wypelnienie = "**";
-//
-//        linia3.dlugosc = 10;
-//        linia3.wypelnienie = "OO";
+/*      linia1.dlugosc = 20;
+        linia1.wypelnienie = "++";
 
+        linia2.dlugosc = 30;
+        linia2.wypelnienie = "**";
+
+        linia3.dlugosc = 10;
+        linia3.wypelnienie = "OO";
+*/
         linia1.drukujLinie();
         linia2.drukujLinie();
         linia3.drukujLinie();
