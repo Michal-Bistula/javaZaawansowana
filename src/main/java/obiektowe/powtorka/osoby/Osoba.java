@@ -2,11 +2,9 @@ package obiektowe.powtorka.osoby;
 
 import java.util.Random;
 
-public class Osoba{
-
+public class Osoba {
     String imie;
     int wiek;
-
 
     /*public Osoba(String startoweImie, int startowyWiek){
         imie = startoweImie;
@@ -18,7 +16,7 @@ public class Osoba{
         this.wiek = wiek;
     }
 
-    public Osoba(){
+    public Osoba() {
         imie = "Jan";
         Random random = new Random();
         wiek = random.nextInt(100) + 1;
@@ -37,7 +35,6 @@ public class Osoba{
     public String toString(){
       return   "Jestem " + imie + " mam " + wiek + " lat";
     }*/
-
 
     @Override
     public String toString() {
