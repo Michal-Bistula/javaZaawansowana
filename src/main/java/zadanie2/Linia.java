@@ -16,28 +16,12 @@ public class Linia {
         this.przeplot = przeplot;
     }
 
-    public void setDlugosc(int dlugosc) {
-        this.dlugosc = dlugosc;
-    }
-
     public void setWypelnienie(String wypelnienie) {
         this.wypelnienie = wypelnienie;
     }
 
-    public void setPrzeplot(String przeplot) {
-        this.przeplot = przeplot;
-    }
-
     public String getWypelnienie() {
         return wypelnienie;
-    }
-
-    public int getDlugosc() {
-        return dlugosc;
-    }
-
-    public String getPrzeplot() {
-        return przeplot;
     }
 
     void drukujLinie() {

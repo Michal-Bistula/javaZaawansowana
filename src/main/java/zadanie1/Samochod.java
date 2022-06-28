@@ -5,29 +5,16 @@ public class Samochod {
     private int przebieg;
     private int przeglad;
 
-    public String getMarka() {
-        return marka;
-    }
 
     public int getPrzebieg() {
         return przebieg;
     }
 
-    public int getPrzeglad() {
-        return przeglad;
-    }
-
-    public void setMarka(String marka) {
-        this.marka = marka;
-    }
 
     public void setPrzebieg(int przebieg) {
         this.przebieg = przebieg;
     }
 
-    public void setPrzeglad(int przeglad) {
-        this.przeglad = przeglad;
-    }
 
     public Samochod(String marka, int przebieg, int przeglad) {
         this.marka = marka;
