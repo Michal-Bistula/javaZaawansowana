@@ -21,7 +21,7 @@ public class Linia {
             System.out.print(wypelnienie);
         }
         System.out.println();
-        // System.out.println(String.valueOf(wypelnienie).repeat(dlugosc));  //ciekawe, krótsze rozwiązanie
+        //  System.out.println(String.valueOf(wypelnienie).repeat(dlugosc));  //ciekawe, krótsze rozwiązanie
     }
 
     void drukujLiniePrzeplot() {
