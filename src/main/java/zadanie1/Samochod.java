@@ -1,9 +1,33 @@
 package zadanie1;
 
 public class Samochod {
-    String marka;
-    int przebieg;
-    int przeglad;
+    private String marka;
+    private int przebieg;
+    private int przeglad;
+
+    public String getMarka() {
+        return marka;
+    }
+
+    public int getPrzebieg() {
+        return przebieg;
+    }
+
+    public int getPrzeglad() {
+        return przeglad;
+    }
+
+    public void setMarka(String marka) {
+        this.marka = marka;
+    }
+
+    public void setPrzebieg(int przebieg) {
+        this.przebieg = przebieg;
+    }
+
+    public void setPrzeglad(int przeglad) {
+        this.przeglad = przeglad;
+    }
 
     public Samochod(String marka, int przebieg, int przeglad) {
         this.marka = marka;
@@ -27,5 +51,14 @@ public class Samochod {
 
     void iloscKilometrow() {
         System.out.println("Przegląd za: " + (przeglad - przebieg) + " km");
+    }
+
+    @Override
+    public String toString() {
+        return "Samochod{" +
+                "marka='" + marka + '\'' +
+                ", przebieg=" + przebieg +
+                ", przeglad=" + przeglad +
+                '}';
     }
 }

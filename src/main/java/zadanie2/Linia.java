@@ -1,9 +1,9 @@
 package zadanie2;
 
 public class Linia {
-    int dlugosc;
-    String wypelnienie;
-    String przeplot;
+    private int dlugosc;
+    private String wypelnienie;
+    private String przeplot;
 
     public Linia(int dlugosc, String wypelnienie) {
         this.dlugosc = dlugosc;
@@ -14,6 +14,30 @@ public class Linia {
         this.dlugosc = dlugosc;
         this.wypelnienie = wypelnienie;
         this.przeplot = przeplot;
+    }
+
+    public void setDlugosc(int dlugosc) {
+        this.dlugosc = dlugosc;
+    }
+
+    public void setWypelnienie(String wypelnienie) {
+        this.wypelnienie = wypelnienie;
+    }
+
+    public void setPrzeplot(String przeplot) {
+        this.przeplot = przeplot;
+    }
+
+    public String getWypelnienie() {
+        return wypelnienie;
+    }
+
+    public int getDlugosc() {
+        return dlugosc;
+    }
+
+    public String getPrzeplot() {
+        return przeplot;
     }
 
     void drukujLinie() {
@@ -29,5 +53,14 @@ public class Linia {
             System.out.print(wypelnienie + przeplot);
         }
         System.out.println();
+    }
+
+    @Override
+    public String toString() {
+        return "Linia{" +
+                "dlugosc=" + dlugosc +
+                ", wypelnienie='" + wypelnienie + '\'' +
+                ", przeplot='" + przeplot + '\'' +
+                '}';
     }
 }
