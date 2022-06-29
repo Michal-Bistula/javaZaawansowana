@@ -2,20 +2,20 @@ package projektDom;
 
 public class Okno {
 
-    private boolean open = false;
+    private boolean otwarte = false;
 
-    public boolean isOpen() {
-        return open;
+    public boolean czyOtwarte() {
+        return otwarte;
     }
 
-    public void doOpen() {
-        open = true;
+    public void otworz() {
+        otwarte = true;
     }
 
     @Override
     public String toString() {
         return "Okno{" +
-                "open=" + open +
+                "otwarte=" + otwarte +
                 '}';
     }
 }

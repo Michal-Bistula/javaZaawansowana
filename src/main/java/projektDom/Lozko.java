@@ -2,21 +2,20 @@ package projektDom;
 
 public class Lozko {
 
-    private int cleanLine;
+    private int czystaPosciel;
 
-    public Lozko(int cleanLine) {
-        this.cleanLine = cleanLine;
+    public Lozko(int ileDni) {
+        this.czystaPosciel = ileDni;
     }
 
-    public void clean() {
-        cleanLine = 0;
+    public void czysc() {
+        czystaPosciel = 0;
     }
-
 
     @Override
     public String toString() {
         return "Lozko{" +
-                "cleanLine=" + cleanLine +
+                "czystaPosciel=" + czystaPosciel +
                 '}';
     }
 }

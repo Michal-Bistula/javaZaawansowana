@@ -6,8 +6,8 @@ public class DomDemo {
     public static void main(String[] args) {
 
         Okno okno = new Okno();
-        okno.doOpen();
-        System.out.println(okno);
+        okno.otworz();
+        System.out.println("Stworzył okno (domyślnie zamknięte): " + okno);
 
         Okno[] okna = new Okno[4];
         okna[0] = new Okno(); //tutaj są 4 obiekty towrzone
@@ -15,28 +15,30 @@ public class DomDemo {
         okna[2] = new Okno();
         okna[3] = new Okno();
 
-        for (Okno aOkno : okna) {
-            aOkno.doOpen();
+        //otwieranie okien
+        for (Okno o : okna) {
+            o.otworz();
         }
-        System.out.println(Arrays.toString(okna));
+        System.out.println("Stworzył 4 okna i je otworzyl: " + Arrays.toString(okna));
 
 
-        Lozko bed = new Lozko(4);
-        bed.clean();
-        System.out.println(bed);
+        Lozko lozko = new Lozko(4);
+        System.out.println("Nowe lóżko: " + lozko);
 
+        lozko.czysc();
+        System.out.println("Czyści łóżko: " + lozko);
 
-        Pokoj room = new Pokoj();
-        Pokoj room2 = new Pokoj(bed, okna);
+        Pokoj pokoj1 = new Pokoj();
+        Pokoj pokoj2 = new Pokoj(lozko, okna);
 
-        System.out.println(room);
-        System.out.println(room2);
+        System.out.println("Tworzy pokój:" + pokoj1);
+        System.out.println("Towrzy pokój z łóżkiem i okno: " + pokoj2);
 
-        //dom
-        Pokoj[] rooms = {room, room2};
-        Dom dom = new Dom(rooms);
-        dom.tidy();
-        System.out.println(dom);
+        //tworzy dom
+        Pokoj[] pokoje = {pokoj1, pokoj2};
+        Dom dom = new Dom(pokoje);
+        dom.posprzataj();
+        System.out.println("Stworzył dom: " + dom);
 
     }
 }

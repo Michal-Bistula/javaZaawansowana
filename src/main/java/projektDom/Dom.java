@@ -3,22 +3,22 @@ package projektDom;
 import java.util.Arrays;
 
 public class Dom {
-    private final Pokoj[] rooms;
+    private final Pokoj[] pokoje;
 
-    public Dom(Pokoj[] rooms) {
-        this.rooms = rooms;
+    public Dom(Pokoj[] pokoje) {
+        this.pokoje = pokoje;
     }
 
-    public void tidy() {
-        for (Pokoj room : rooms) {
-            room.tidy();
+    public void posprzataj() {
+        for (Pokoj pokoj : pokoje) {
+            pokoj.posprzataj();
         }
     }
 
     @Override
     public String toString() {
         return "Dom{" +
-                "rooms=" + Arrays.toString(rooms) +
+                "pokoje=" + Arrays.toString(pokoje) +
                 '}';
     }
 }

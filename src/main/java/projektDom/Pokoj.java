@@ -3,27 +3,28 @@ package projektDom;
 import java.util.Arrays;
 
 public class Pokoj {
-    private final Lozko bed;
+    private final Lozko lozko;
     private final Okno[] okna;
 
-
-    public Pokoj(Lozko bed, Okno[] okna) {
-        this.bed = bed;
+    //1 konstruktor
+    public Pokoj(Lozko lozko, Okno[] okna) {
+        this.lozko = lozko;
         this.okna = okna;
     }
 
+    //drugi konstruktor
     public Pokoj() {
-        bed = new Lozko(5);
+        lozko = new Lozko(5);
         okna = new Okno[2];
         okna[0] = new Okno();
         okna[1] = new Okno();
 
     }
 
-    public void tidy(){
-        bed.clean();
+    public void posprzataj() {
+        lozko.czysc();
         for (Okno okno : okna) {
-            okno.doOpen();
+            okno.otworz();
         }
 
     }
@@ -31,7 +32,7 @@ public class Pokoj {
     @Override
     public String toString() {
         return "Pokoj{" +
-                "bed=" + bed +
+                "lozko=" + lozko +
                 ", okna=" + Arrays.toString(okna) +
                 '}';
     }
