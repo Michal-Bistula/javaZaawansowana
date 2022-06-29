@@ -21,11 +21,22 @@ public class DomDemo {
         System.out.println(Arrays.toString(okna));
 
 
-
         Lozko bed = new Lozko(4);
         bed.clean();
         System.out.println(bed);
 
+
+        Pokoj room = new Pokoj();
+        Pokoj room2 = new Pokoj(bed, okna);
+
+        System.out.println(room);
+        System.out.println(room2);
+
+        //dom
+        Pokoj[] rooms = {room, room2};
+        Dom dom = new Dom(rooms);
+        dom.tidy();
+        System.out.println(dom);
 
     }
 }
