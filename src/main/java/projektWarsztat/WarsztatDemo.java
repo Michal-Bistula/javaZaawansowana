@@ -1,5 +1,5 @@
 package projektWarsztat;
-
+//dokończyć
 public class WarsztatDemo {
     public static void main(String[] args) {
 
