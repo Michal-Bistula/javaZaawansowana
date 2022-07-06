@@ -7,22 +7,22 @@ public class Input {
 
     public int readNumber(){
         Scanner scanner = new Scanner(System.in);
-        int number;
+        System.out.println("Podaj liczbę");
         try {
-            number = scanner.nextInt();
-            System.out.println("Podano " + number);
+            return scanner.nextInt();
         }catch (InputMismatchException e){
             System.out.println("Błąd. Wpisz liczbę");
-            return this.readNumber();
+            return readNumber();
+        }finally{
+            System.out.println("konic bloku pobierania");
         }
-        return number;
     }
 
 
     public static void main(String[] args) {
         Input input = new Input();
         //System.out.println("podano "+ input.readNumber());
-input.readNumber();
+        input.readNumber();
 
 
 
